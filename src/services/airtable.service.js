@@ -99,7 +99,6 @@ class AirtableService {
 
       const createdRecords = [];
       
-      // Airtable has a limit of 10 records per batch
       for (let i = 0; i < records.length; i += 10) {
         const batch = records.slice(i, i + 10);
         const batchResults = await getTable().create(batch);

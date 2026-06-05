@@ -8,18 +8,12 @@ const recordsController = require('../controllers/records.controller');
 /**
  * GET /api/records
  * الحصول على جميع السجلات
- * الاستعلام المدعوم:
- *   - limit: عدد النتائج
- *   - sort: ترتيب النتائج
- *   - filter: فلتر البحث
  */
 router.get('/', recordsController.getAll.bind(recordsController));
 
 /**
  * GET /api/records/search
  * البحث عن السجلات
- * الاستعلام المدعوم:
- *   - query: صيغة البحث
  */
 router.get('/search', recordsController.search.bind(recordsController));
 
