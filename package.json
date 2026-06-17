@@ -1,0 +1,35 @@
+{
+  "name": "sheroom1",
+  "version": "1.0.0-alpha",
+  "description": "SHE ROOM JO - مشروع شي روم جو",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [
+    "sheroom",
+    "api",
+    "express"
+  ],
+  "author": "SHE ROOM JO",
+  "license": "Unlicense",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

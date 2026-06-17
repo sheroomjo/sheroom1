@@ -4,6 +4,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 
 // استيراد المسارات
 const recordsRoutes = require('./routes/records.routes');
@@ -21,6 +22,9 @@ const app = express();
 // Body Parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// Static Files - Serve public directory for landing page with Speed Insights
+app.use(express.static(path.join(__dirname, '../public')));
 
 // CORS
 app.use(cors({
